@@ -1,0 +1,45 @@
+.navbar-dark .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover,.navbar-dark .navbar-brand:hover {
+    color: rgb(119, 226, 19) !important;
+}
+
+.carousel-inner .carousel-item img {
+	width: 100%;
+	height: 100px;
+}
+
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform : translateY(-50%);
+}
+
+
+.slider-font{
+	font-family: 'Merienda', cursive;
+}
+
+.what-font{
+	font-family: 'Ruslan Display', cursive;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+	background-color: pink !important;
+	 color: rgb(119, 226, 19) !important;
+
+}
+
+.footer-up{
+	background-color:rgb(40, 40, 40) ;
+}
+

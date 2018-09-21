@@ -1,0 +1,642 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Merienda" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Forum|Ruslan+Display" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/animate.css" />
+	<script src="js/wow.min.js"></script>
+	<script src="js/my.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	<script src="js/jquery.numscroller-1.0.js"></script>
+	<!--<script>
+		$(function () {
+			var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
+			if (isTouch) {
+				$('.revelOnScroll').addClass('animated');
+			}
+			$window.on('scrol', revelOnScroll);
+			function revelOnScroll() {
+				var scrolled = $window.scrollTop(), win_height_padded = $window.height() * 1.1;
+				$('.revelOnScroll:not(.animated)').each(function () {
+					var $this = $(this), offsetTop = $this.offset().top;
+					if (scrolled + win_height_padded > offsetTop) {
+						if ($this.data('timeout')) {
+							window.setTimeout(function () {
+								$this.addClass('animated' + $this.data('animation'));
+							}, parseInt($this.data('timeout'), 10));
+						} else {
+							$this.addClass('animated' + $this.data('animation'));
+						}
+					}
+				});
+				$('.revelOnScroll.animated').each(function (index) {
+					var $this = $(this), offsetTop = $this.offset().top;
+					if (scrolled + win_height_padded < offsetTop) {
+						$(this).removeClass('animated fateInX lightSpeedIn');
+					}
+				});
+			}
+			revelOnScroll();
+		});
+	</script>-->
+	<script>
+		$(document).ready(function () {
+			$('.progress .progress-bar').css("width",
+				function () {
+					return $(this).attr("aria-valuenow") + "%";
+				}
+			)
+		});
+	</script>
+
+</head>
+<section class="div_all">
+
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="assets/logo.gif" style="width:50px;height: auto;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarResponsive">
+					<ul class="navbar-nav ml-auto text-justify">
+						<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown" style="color:rgb(92, 178, 41);">Home</a>
+							<div class="dropdown-menu ">
+								<a class="dropdown-item text-success" href="#">Home 1</a>
+								<a class="dropdown-item text-success" href="#">Home 2</a>
+								<a class="dropdown-item text-success" href="#">Home 3</a>
+								<a class="dropdown-item text-success" href="#">Home 4</a>
+								<a class="dropdown-item text-success" href="#">Home 5</a>
+								<a class="dropdown-item text-success" href="#">Home 6</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">About Us</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item text-success" href="#">About Us</a>
+								<a class="dropdown-item text-success" href="#">About Me</a>
+								<a class="dropdown-item text-success" href="#">FAQ</a>
+								<a class="dropdown-item text-success" href="#">Pricing</a>
+								<a class="dropdown-item text-success" href="#">Comming Soon</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PortFolio</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item text-success" href="#">Portfolio Three Column</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Masonry</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Fullwidth</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Four Column</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Single 01</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Single 02</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Single 03</a>
+								<a class="dropdown-item text-success" href="#">Portfolio Single 04</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"" href=" #">Blog</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item text-success" href="#">Blog Right Sidebar</a>
+								<a class="dropdown-item text-success" href="#">Blog Left Sidebar</a>
+								<a class="dropdown-item text-success" href="#">Blog Single Post</a>
+								<a class="dropdown-item text-success" href="#">Error Page</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"" href=" #">Shop</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item text-success" href="#">Shop Products</a>
+								<a class="dropdown-item text-success" href="#">Product Details</a>
+								<a class="dropdown-item text-success" href="#">Shopping Cart</a>
+								<a class="dropdown-item text-success" href="#">Checkout Page</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#">
+								<i class="fa fa-cart-plus" style="font-size:36px"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<!--slider -->
+		<div id="slides" class="carousel slide slider-font" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#slides" data-slide-to="0" class="active"></li>
+				<li data-target="#slides" data-slide-to="1"></li>
+				<li data-target="#slides" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/background1.png" style="width: 100%;height: 600px;">
+					<div class="carousel-caption" style="position: absolute;top: 50%;transform : translateY(-50%);">
+						<h1 class="display-2 animated rubberBand">SPECTRA</h1>
+						<h3> Discover The Spectra World</h3>
+					</div>
+				</div>
+				<div class="carousel-item" style="width: 100%;height: 600px;">
+					<img src="assets/background2.jpg">
+				</div>
+				<div class="carousel-item" style="width: 100%;height: 600px;">
+					<img src="assets/background3.jpg">
+				</div>
+			</div>
+		</div>
+
+		<section class="div_hover_container">
+			<div class="container-fluid ">
+				<div class="row" style="margin: 50px 50px;">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4 wow jackInTheBox" data-animation="flipInX" style="text-align: center;">
+						<h3 style="font-family: 'Coda Caption', sans-serif;">WHAT WE DO</h3>
+						<p>WELCOME TO THE SPECTA MINIMAL THEME</p>
+					</div>
+					<div class="col-sm-4"></div>
+
+				</div>
+				<div class="row" style="margin: 50px 50px;">
+					<div class="col-sm-4" style="text-align: center;">
+						<i class="fa fa-picture-o wow jackInTheBox div_hover" style="font-size:36px"></i>
+						<br /><br />
+						<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">UNLIMITED COLOURS .</h6>
+						<p>
+							Yet thus falcon ben secret immorally near
+							rubbed some earth of ineffectively abandoned
+							depending on the far mumbled.
+						</p>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<i class="fa fa-cogs wow jackInTheBox div_hover" style="font-size:36px"></i>
+						<br /><br />
+						<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">POWERFUL BACKEND .</h6>
+						<p>
+							Yet thus falcon ben secret immorally near rubbed some earth of ineffectively abandoned depending on the far
+							mumbled.
+						</p>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<i class="fa fa-cubes wow jackInTheBox div_hover" style="font-size:36px"></i>
+						<br /><br />
+						<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">UNLIMITED COLOURS .</h6>
+						<p>
+							Yet thus falcon ben secret immorally near rubbed some earth of ineffectively abandoned depending on the far
+							mumbled.
+						</p>
+					</div>
+				</div>
+				<div class="row" style="margin: 50px 50px;">
+					<div class="col-sm-4" style="text-align: center;">
+						<i class="fa fa-desktop wow jackInTheBox div_hover" style="font-size:36px"></i>
+						<br /><br />
+						<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">100% PIXEL PERFECT .</h6>
+						<p>
+							Yet thus falcon ben secret immorally near
+							rubbed some earth of ineffectively abandoned
+							depending on the far mumbled.
+						</p>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<i class="fa fa-podcast wow jackInTheBox div_hover" style="font-size:36px"></i>
+						<br /><br />
+						<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">SEO OPTIMIZED .</h6>
+						<p>
+							Yet thus falcon ben secret immorally near rubbed some earth of ineffectively abandoned depending on the far
+							mumbled.
+						</p>
+					</div>
+					<div class="col-sm-4 " style="text-align: center;">
+						<i class="fa fa-puzzle-piece wow jackInTheBox div_hover" style="font-size:36px"></i>
+						<br /><br />
+						<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">CREATIVE MINIMAL .</h6>
+						<p>
+							Yet thus falcon ben secret immorally near rubbed some earth of ineffectively abandoned depending on the far
+							mumbled.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!--Contact Us-->
+		<section class="bg-dark div_hover_container">
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center" style="height: 80px;">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-1" class="align-items-left">
+						<i class="fa fa-angle-double-right wow slideInLeft align-items-right" style="font-size:60px;color:wheat;">
+						</i>
+					</div>
+					<div class="col-sm-6 div_hover" style="text-align:left;">
+						<h5><b>LET'S TALK ABOUT SOME MORE WORK .</b></h5>
+						<p>Get in touch with us for your next project and huskily far darn beneath one decisive.</p>
+					</div>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-3">
+						<button type="button" class="btn btn-secondary btn-dark-hover">CONTACT US</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<br /><br />
+		<section class="justify-content-center align-items-center">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-sm-6  justify-content-center align-items-center">
+					<div class="row">
+						<div class="col-sm-6" style="color:wheat;text-align:left;">
+							<h6 style="margin:0px 20px;">Graphic Design</h6>
+						</div>
+						<div class="col-sm-6" style="color:wheat;text-align:Right;">
+							<h6 style="margin:0px 20px;">55%</h6>
+						</div>
+					</div>
+					<div class="progress" style="margin:20px 20px;height:10px;">
+						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:55% ;height:10px;"></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6" style="color:wheat;text-align:left;">
+							<h6 style="margin:0px 20px;">Web Development</h6>
+						</div>
+						<div class="col-sm-6" style="color:wheat;text-align:Right;">
+							<h6 style="margin:0px 20px;">72%</h6>
+						</div>
+					</div>
+					<div class="progress" style="margin:20px 20px;height:10px;">
+						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:72% ;height:10px;"></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6" style="color:wheat;text-align:left;">
+							<h6 style="margin:0px 20px;">Video Editing</h6>
+						</div>
+						<div class="col-sm-6" style="color:wheat;text-align:Right;">
+							<h6 style="margin:0px 20px;">98%</h6>
+						</div>
+					</div>
+					<div class="progress" style="margin:20px 20px;height:10px;">
+						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:98% ;height:10px;"></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6" style="color:wheat;text-align:left;">
+							<h6 style="margin:0px 20px;">Web Design</h6>
+						</div>
+						<div class="col-sm-6" style="color:wheat;text-align:Right;">
+							<h6 style="margin:0px 20px;">85%</h6>
+						</div>
+					</div>
+					<div class="progress" style="margin:20px 20px;height:10px;">
+						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:85% ;height:10px;"></div>
+					</div>
+
+
+				</div>
+				<div class="col-sm-6">
+					<img src="assets/side.jpg" style="width:100%;height:auto;">
+				</div>
+			</div>
+
+		</section>
+
+		<section class="div_hover_container">
+			<div class="container-fluid">
+				<div class="row" style="margin: 50px 50px 20px;">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4 wow jackInTheBox" data-animation="flipInX" style="text-align: center;">
+						<h3 style="font-family: 'Coda Caption', sans-serif;">MEET THE TEAM</h3>
+						<p>WE HAVE MANY THINGS TO SAY TO OUR READERS</p>
+					</div>
+					<div class="col-sm-4"></div>
+
+				</div>
+				<div class="row" style="padding:20px 20px;">
+					<div class="col-sm-4 ">
+						<div class="card">
+							<img src="assets/t1.jpg" alt="Jane" style="width:100%">
+							<div class="container " style="background-color: lightslategray;">
+								<h3 style="color:wheat;">daniel owen <span style="color:springgreen;">.</span></h3>
+								<div style="color:lightgray;">Project Leader</div>
+								<br />
+								<ul class="nav justify-content-left">
+									<li class="nav-item"><a class="nav-link " href="#"><span class="fa fa-twitter " style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-facebook" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-google-plus" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-pinterest-p" style="color: darkgray;"></span></a></li>
+								</ul>
+								<br />
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 ">
+						<div class="card">
+							<img src="assets/t2.jpg" alt="Mike" style="width:100%">
+							<div class="container " style="background-color: lightslategray;">
+								<h3 style="color:wheat;">Mike Ross <span style="color:springgreen;">.</span></h3>
+								<div style="color:lightgray;">Art Director</div>
+								<br />
+								<ul class="nav justify-content-left">
+									<li class="nav-item div_hover"><a class="nav-link " href="#"><span class="fa fa-twitter" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-facebook" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-google-plus" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-pinterest-p" style="color: darkgray;"></span></a></li>
+								</ul>
+								<br />
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 ">
+						<div class="card">
+							<img src="assets/t3.jpg" alt="John" style="width:100%">
+							<div class="container " style="background-color: lightslategray;">
+								<h3 style="color:wheat;">John Doe <span style="color:springgreen;">.</span></h3>
+								<div style="color:lightgray;">Designer</div>
+								<br />
+								<ul class="nav justify-content-left">
+									<li class="nav-item"><a class="nav-link " href="#"><span class="fa fa-twitter " style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-facebook" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-google-plus" style="color: darkgray;"></span></a></li>
+									<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-pinterest-p" style="color: darkgray;"></span></a></li>
+								</ul>
+								<br />
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="padding:20px 20px;">
+			</div>
+
+		</section>
+		<br /><br />
+
+		<section style="padding:30px 0px;">
+			<div id="demo" class="carousel slide " data-ride="carousel" style="background-image: url('assets/image.jpg');">
+
+				<!-- Indicators -->
+
+
+				<!-- The slideshow -->
+				<div class="carousel-inner justify-content-center align-items-center">
+
+					<div class="carousel-item active">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-sm-12  justify-content-center align-items-center">
+								<br /><br />
+								<div style="text-align: center;">
+									<i class="fa fa-quote-left" style="font-size:60px;color:springgreen;"></i>
+								</div>
+								<div style="padding:10px; text-align: center;color:silver;">
+									<p style="font-size: 20px;"><b>"I had a great experience with Specta, they always listened very carefully, was
+											very
+											encouraging and gave good advice. I would definitely recommend them to everyone having some projects done."
+										</b></p>
+								</div>
+								<div style="padding:10px;text-align: center;">
+									<br>
+									<img src="assets/author.jpg" class="rounded-circle" alt="" />
+									<br>
+								</div>
+								<div style="padding:10px; text-align: center;color:silver;">
+									<h3>Thomas Alison (USA)</h3>
+								</div>
+								<br /><br />
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item ">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-sm-12  justify-content-center align-items-center">
+								<br /><br />
+								<div style="text-align: center;">
+									<i class="fa fa-quote-left" style="font-size:60px;color:springgreen;"></i>
+								</div>
+								<div style="padding:10px; text-align: center;color:silver;">
+									<p style="font-size: 20px;"><b>"I had a great experience with Specta, they always listened very carefully, was
+											very
+											encouraging and gave good advice. I would definitely recommend them to everyone having some projects done."
+										</b></p>
+								</div>
+								<div style="padding:10px;text-align: center;">
+									<br>
+									<img src="assets/author.jpg" class="rounded-circle" alt="" />
+									<br>
+								</div>
+								<div style="padding:10px; text-align: center;color:silver;">
+									<h3>Thomas Alison (USA)</h3>
+								</div>
+								<br /><br />
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon" style=></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+
+		</section>
+
+		<br /><br />
+
+		<!--number section-->
+		<div class="row">
+			<div class="col-sm-3" style="text-align: center;">
+				<div>
+					<i class="fa fa-calendar-check-o div_hover_container" style="font-size:66px"></i>
+				</div>
+				<br />
+				<h1 style="color:wheat;"><span class='numscroller' data-min='1' data-max='1000' data-delay='5' data-increment='6'>1000</span></h1>
+				<p style="color:gray;">Projects Launched</p>
+			</div>
+			<div class="col-sm-3" style="text-align: center;">
+				<div>
+					<i class="fa fa-calendar-check-o div_hover_container" style="font-size:66px"></i>
+				</div>
+				<br />
+				<h1 style="color:wheat;"><span class='numscroller' data-min='1' data-max='250' data-delay='5' data-increment='2'>250</span></h1>
+				<p style="color:gray;">Projects Launched</p>
+			</div>
+			<div class="col-sm-3" style="text-align: center;">
+				<div>
+					<i class="fa fa-calendar-check-o div_hover_container" style="font-size:66px"></i>
+				</div>
+				<br />
+				<h1 style="color:wheat;"><span class='numscroller' data-min='1' data-max='500' data-delay='5' data-increment='3'>500</span></h1>
+				<p style="color:gray;">Projects Launched</p>
+			</div>
+			<div class="col-sm-3" style="text-align: center;">
+				<div>
+					<i class="fa fa-calendar-check-o div_hover_container" style="font-size:66px"></i>
+				</div>
+				<br />
+				<h1 style="color:wheat;"><span class='numscroller' data-min='1' data-max='100' data-delay='5' data-increment='1'>100</span></h1>
+				<p style="color:gray;">Projects Launched</p>
+			</div>
+		</div>
+
+		<!--blog section-->
+		<section class="div_hover_container div_hover_container_footer">
+			<div class="container-fluid ">
+				<div class="row" style="margin: 50px 50px;">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4 wow jackInTheBox" data-animation="flipInX" style="text-align: center;">
+						<h3 style="font-family: 'Coda Caption', sans-serif;">READ THE BLOG</h3>
+						<p>WE HAVE MANY THINGS TO SAY TO OUR READERS</p>
+					</div>
+					<div class="col-sm-4"></div>
+
+				</div>
+				<div class="row" style="margin: 50px 50px;">
+					<div class="col-sm-4" style="text-align: left;">
+						<div class="container">
+							<img src="assets/footer.jpg" class="image center" style="width:100%;height:auto;">
+							<div class="text-block">
+								<h6>25</h6>
+								<p>May</p>
+							</div>
+						</div>
+						<br />
+						<div style="color:gray;padding: 15px;">
+							<i class="fa fa-user-o" style="font-size:18px"> Kent Wills </i>
+							<i class="fa fa-pencil-square-o" style="font-size:18px"> 68</i>
+						</div>
+						<div style="padding: 15px;">
+							<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">ADOPT TRUE STRATEGIES .</h6>
+							<p>
+								Yet thus falcon ben secret immorally near
+								rubbed some earth of ineffectively abandoned
+								depending on the far mumbled.
+							</p>
+							<button type="button" class="btn btn-outline-success">Read More</button>
+						</div>
+					</div>
+					<div class="col-sm-4" style="text-align: left;">
+						<div class="container">
+							<img src="assets/footer.jpg" class="image center" style="width:100%;height:auto;">
+							<div class="text-block">
+								<h6>25</h6>
+								<p>May</p>
+							</div>
+						</div>
+						<br />
+						<div style="color:gray;padding: 15px;">
+							<i class="fa fa-user-o" style="font-size:18px"> Kent Wills </i>
+							<i class="fa fa-pencil-square-o" style="font-size:18px"> 68</i>
+						</div>
+						<div style="padding: 15px;">
+							<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">ADOPT TRUE STRATEGIES .</h6>
+							<p>
+								Yet thus falcon ben secret immorally near
+								rubbed some earth of ineffectively abandoned
+								depending on the far mumbled.
+							</p>
+							<button type="button" class="btn btn-outline-success">Read More</button>
+						</div>
+					</div>
+					<div class="col-sm-4" style="text-align: left;">
+						<div class="container">
+							<img src="assets/footer.jpg" class="image center" style="width:100%;height:auto;">
+							<div class="text-block">
+								<h6>25</h6>
+								<p>May</p>
+							</div>
+						</div>
+						<br />
+						<div style="color:gray;padding: 15px;">
+							<i class="fa fa-user-o" style="font-size:18px"> Kent Wills </i>
+							<i class="fa fa-pencil-square-o" style="font-size:18px"> 68</i>
+						</div>
+						<div style="padding: 15px;">
+							<h6 class="div_hover" style="font-family: 'Coda Caption', sans-serif;">ADOPT TRUE STRATEGIES .</h6>
+							<p>
+								Yet thus falcon ben secret immorally near
+								rubbed some earth of ineffectively abandoned
+								depending on the far mumbled.
+							</p>
+							<button type="button" class="btn btn-outline-success">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section style="background-color:rgb(40, 40, 40)">
+			<div class="auto-container div_hover" style="text-align: center; color: darkgray;">
+				<div class="logo">
+					<a href="index.html"><img src="assets/footer-logo.png" alt="" /></a>
+				</div>
+				<ul class="nav justify-content-center " style="color: darkgray;">
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">Home</a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">About</a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">Services</a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">Gallery</a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">Features</a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">Blog</a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#" style="color: darkgray;">Contact</a></li>
+				</ul>
+				<ul class="nav justify-content-center">
+					<li class="nav-item"><a class="nav-link " href="#"><span class="fa fa-twitter " style="color: darkgray;"></span></a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-facebook" style="color: darkgray;"></span></a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-google-plus" style="color: darkgray;"></span></a></li>
+					<li class="nav-item"><a class="nav-link div_hover" href="#"><span class="fa fa-pinterest-p" style="color: darkgray;"></span></a></li>
+				</ul>
+			</div>
+
+			<hr style="color:rgb(0, 0, 0)">
+			<div class="container-fluid copyright" style="text-align: center;height: 40px;">
+				<p style="color:rgb(100, 100, 100);">© 2018 SPECTA Minimal All rights reserved.</p>
+			</div>
+		</section>
+
+	</body>
+
+</html>
